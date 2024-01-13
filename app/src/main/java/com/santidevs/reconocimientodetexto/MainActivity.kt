@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-
         binding.apply {
 
             captureImage.setOnClickListener() {
@@ -61,10 +60,14 @@ class MainActivity : AppCompatActivity() {
             image?.let {
 
                 recognizer.process(it)
-                    .addOnSuccessListener {
-
-                        binding.textView.text = it.text
-
+                    .addOnSuccessListener { result ->
+                        if (result.text.isEmpty()) {
+                            // No hay texto reconocido
+                            Toast.makeText(this, "No se encontró texto en la imagen", Toast.LENGTH_SHORT).show()
+                        } else {
+                            // Hay texto reconocido, actualiza el TextView
+                            binding.textView.text = result.text
+                        }
                     }
                     .addOnFailureListener {
 
