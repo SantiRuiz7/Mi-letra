@@ -2,10 +2,10 @@ package com.santidevs.reconocimientodetexto
 
 import android.content.Intent
 import android.graphics.Bitmap
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private val REQUEST_IMAGE_CAPTURE = 1
 
-    private var imageBitmap: Bitmap?= null
+    private var imageBitmap: Bitmap? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,11 +31,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
 
-            captureImage.setOnClickListener(){
+            captureImage.setOnClickListener() {
 
                 takeImage()
 
-                textView.text=""
+                textView.text = ""
 
             }
 
@@ -47,39 +47,36 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
     }
 
     private fun processImage() {
 
-        if (imageBitmap!=null){
+        if (imageBitmap != null) {
 
-        val image = imageBitmap?.let {
+            val image = imageBitmap?.let {
 
-            InputImage.fromBitmap(it, 0)
-        }
+                InputImage.fromBitmap(it, 0)
+            }
 
-        image?.let {
+            image?.let {
 
-            recognizer.process(it)
-                .addOnSuccessListener {
+                recognizer.process(it)
+                    .addOnSuccessListener {
 
-                    binding.textView.text = it.text
+                        binding.textView.text = it.text
 
-                }
-                .addOnFailureListener{
+                    }
+                    .addOnFailureListener {
 
-                    Toast.makeText(this, "Nothing to show", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Nothing to show", Toast.LENGTH_SHORT).show()
 
-                }
+                    }
 
-        }
+            }
 
-    }
+        } else {
 
-        else{
-
-            Toast.makeText(this,"Please select image first", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Please select image first", Toast.LENGTH_SHORT).show()
 
         }
 
@@ -93,8 +90,8 @@ class MainActivity : AppCompatActivity() {
 
             startActivityForResult(intent, REQUEST_IMAGE_CAPTURE)
 
-        }
-        catch (e:Exception){
+        }catch (e: Exception) {
+
 
         }
 
@@ -104,13 +101,13 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
 
-        if (requestCode==REQUEST_IMAGE_CAPTURE && resultCode== RESULT_OK){
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
 
-            val extras:Bundle?=data?.extras
+            val extras: Bundle? = data?.extras
 
-            imageBitmap=extras?.get("data") as Bitmap
+            imageBitmap = extras?.get("data") as Bitmap
 
-            if (imageBitmap!=null){
+            if (imageBitmap != null) {
 
                 binding.imageView.setImageBitmap(imageBitmap)
 
@@ -118,8 +115,5 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
-
     }
-
 }
