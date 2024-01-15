@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private var imageBitmap: Bitmap? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -119,4 +120,5 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 }
