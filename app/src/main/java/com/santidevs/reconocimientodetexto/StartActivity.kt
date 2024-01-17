@@ -20,5 +20,15 @@ class StartActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnScrolling: ImageButton = findViewById(R.id.btn_search)
+
+        btnScrolling.setOnClickListener {
+            // Crea un Intent para iniciar la nueva actividad
+            val intent = Intent(this, ScrollingActivity::class.java)
+
+            // Inicia la nueva actividad
+            startActivity(intent)
+        }
+
     }
 }

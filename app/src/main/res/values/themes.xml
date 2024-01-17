@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.ReconocimientoDeTexto" parent="Base.Theme.ReconocimientoDeTexto" />
+
+    <style name="Theme.ReconocimientoDeTexto.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ReconocimientoDeTexto.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ReconocimientoDeTexto.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

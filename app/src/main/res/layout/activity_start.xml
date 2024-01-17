@@ -16,7 +16,8 @@
         app:srcCompat="@android:drawable/ic_menu_edit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,15 +33,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="Captura"
-            app:srcCompat="@android:drawable/ic_menu_camera" />
+            app:srcCompat="@android:drawable/ic_menu_camera"/>
 
         <ImageButton
-            android:contentDescription="Habla"
-            android:id="@+id/btn_speak"
+            android:id="@+id/btn_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@android:drawable/ic_btn_speak_now"/>
+            android:contentDescription="Buscar"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
 
         <ImageButton
             android:id="@+id/btn_draw"
@@ -51,16 +52,6 @@
             app:srcCompat="@android:drawable/ic_menu_edit" />
 
     </LinearLayout>
-
-    <SearchView
-        android:id="@+id/search_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:contentDescription="search"
-        app:layout_constraintTop_toBottomOf="@id/imageView2"
-        android:background="@color/gris"
-        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
