@@ -8,10 +8,220 @@
     tools:context=".ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="A"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="B"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="C"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="D"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="E"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/f"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="F"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/G"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="G"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/H"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="H"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/I"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="I"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/J"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="J"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/K"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="K"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/l"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="L"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/M"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="M"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/N"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="N"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/O"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="O"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/P"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="P"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/Q"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Q"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/r"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/S"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="S"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/T"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="T"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/U"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="U"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/V"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="V"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/W"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="W"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/X"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="X"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/Y"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:layout_margin="30dp">
+        </Button>
+
+        <Button
+            android:id="@+id/Z"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Z"
+            android:layout_margin="30dp">
+        </Button>
+
+    </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
