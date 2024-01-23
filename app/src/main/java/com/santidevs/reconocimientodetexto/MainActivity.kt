@@ -14,11 +14,11 @@ import com.santidevs.reconocimientodetexto.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
+    private val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
 
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
-    private val REQUEST_IMAGE_CAPTURE = 1
+    private val requestImageCapture = 1
 
     private var imageBitmap: Bitmap? = null
 
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
 
-            captureImage.setOnClickListener() {
+            captureImage.setOnClickListener {
 
                 takeImage()
 
@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
 
         try {
 
-            startActivityForResult(intent, REQUEST_IMAGE_CAPTURE)
+            startActivityForResult(intent, requestImageCapture)
 
         }catch (e: Exception) {
 
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
 
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+        if (requestCode == requestImageCapture && resultCode == RESULT_OK) {
 
             val extras: Bundle? = data?.extras
 

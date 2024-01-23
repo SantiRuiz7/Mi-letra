@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gris">#009688</color>
     <color name="amarillo">#D1FF00</color>
-    <color name="fondo">#D0D6B6</color>
+    <color name="fondo">#A5B4EA</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+
 </resources>

@@ -16,23 +16,14 @@
             android:name=".ScrollingActivity"
             android:exported="false"
             android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.ReconocimientoDeTexto.NoActionBar" />
-        <activity
-            android:name=".FirstFragment"
-            android:exported="false" />
-        <activity
-            android:name=".fragment_first"
-            android:exported="false" />
-        <activity
-            android:name=".SearchActivity"
-            android:exported="false" />
+            android:theme="@style/Theme.ReconocimientoDeTexto.NoActionBar"/>
         <activity
             android:name=".StartActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 

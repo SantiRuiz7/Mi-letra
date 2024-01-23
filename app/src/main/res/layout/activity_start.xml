@@ -11,26 +11,26 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="127dp"
-        android:layout_height="158dp"
+        android:layout_height="160dp"
         android:contentDescription="Image"
         app:srcCompat="@android:drawable/ic_menu_edit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="150dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="110dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageButton
             android:id="@+id/btn_capture"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="Captura"
             app:srcCompat="@android:drawable/ic_menu_camera"/>
@@ -46,7 +46,7 @@
         <ImageButton
             android:id="@+id/btn_draw"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="Dibuja"
             app:srcCompat="@android:drawable/ic_menu_edit" />
